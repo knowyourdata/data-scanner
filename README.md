@@ -23,7 +23,20 @@ For more advanced scenarios please see Commercial Version below.
 * Java JRE 1.7
 
 ## Usage
-You configure the application using config/config.properties.
+1.) Download the release (see releases)
+
+2.) Build the data-scanner-core project:
+mvn clean install
+
+3.) Untar the  data-scanner-core-1.0-bin-release.tar
+
+4.) Run the run.cmd/run.sh
+
+=> this will generate the result files (Excel + JSON-files) into the result folder (based on northwind.sql) demo data.
+
+5.) Fine-Tuning:
+See the possible configuration files in the config directory.
+You configure the input datasources using config/config.properties.
 
 ## How it works
 You can provide 
