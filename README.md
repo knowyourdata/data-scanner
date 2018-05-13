@@ -65,8 +65,6 @@ The program will generate the following files:
 
 => Using the file index.html you can view the d3js / SVG diagram based on Json file overview by application.
 
-[View dynamic diagram](data-scanner-core/xdocs/sample_northwind/result/index.html)
-
 [Download Excel](data-scanner-core/xdocs/sample_northwind/result/result.xlsx)
 
 ## Screenshots
