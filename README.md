@@ -41,7 +41,7 @@ See the possible configuration files in the config directory.
 If you want german messages, please rename messages_de.properties to messages.properties
 * classification.properties = Classify the column names to datacategories
 * datacategory_sensitivity.properties = Classify the datacategories to sensitivity classes
-
+* log4j.properties = LOG4J Logger configuration
 
 ## How it works
 You can provide 
@@ -104,6 +104,11 @@ For more information please visit:
 
 [KnowYourData Enterprise](http://www.fwd.at/) (by FWD GmbH).
 
+
+## Credits
+* Excel files are generated using the Apache POI project - https://poi.apache.org/
+* SVG visualization is done using the d3js - https://d3js.org/
+* The sunburst diagram is based on the sample diagram at https://bl.ocks.org/mbostock/4063423
 
 ## License
 
