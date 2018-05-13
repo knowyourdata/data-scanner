@@ -105,7 +105,7 @@ Here is a short list of the features that support you exploring your data even m
 
 For more information please visit:
 
-[KnowYourData Enterprise](http://www.fwd.at/) (by FWD GmbH).
+[Data scanner enterprise](http://www.fwd.at/) (by FWD GmbH).
 
 
 ## Credits
