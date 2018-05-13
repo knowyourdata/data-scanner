@@ -14,9 +14,9 @@ It will output the results bascially in the format MS Excel.
 Additionally, JSON files are provided for visualizing the tables/columns matched as personal data.
 
 This software assists in creating and especially maintaining the records data processing activities by reading the
-person-related data from where it is stored (the database). 
+person-related data from the database schema. 
  
-For more advanced scenarios please see Commercial Version below.
+For more advanced scenarios (like reading from the database records) please see Commercial Version below.
 
 
 ## Installation Requirements
