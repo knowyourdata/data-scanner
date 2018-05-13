@@ -112,6 +112,7 @@ For more information please visit:
 * Excel files are generated using the Apache POI project - https://poi.apache.org/
 * SVG visualization is done using the d3js - https://d3js.org/
 * The sunburst diagram is based on the sample diagram at https://bl.ocks.org/mbostock/4063423
+* The sample results are based on the Northwind database port to mysql - https://github.com/dalers/mywind
 
 ## License
 
