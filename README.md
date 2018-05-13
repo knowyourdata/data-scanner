@@ -35,7 +35,13 @@ mvn clean install
 
 5.) Fine-Tuning:
 See the possible configuration files in the config directory.
-You configure the input datasources using config/config.properties.
+
+* config.properties = Configure the input sources (JDBC or DDL) 
+* messages.properties = customization of all labels. 
+If you want german messages, please rename messages_de.properties to messages.properties
+* classification.properties = Classify the column names to datacategories
+* datacategory_sensitivity.properties = Classify the datacategories to sensitivity classes
+
 
 ## How it works
 You can provide 
@@ -56,6 +62,8 @@ The program will generate the following files:
 * JSON file with overview by application
 
 * JSON file with overview by datacategory
+
+=> Using the file index.html you can view the d3js / SVG diagram based on Json file overview by application.
 
 
 ## Screenshots
