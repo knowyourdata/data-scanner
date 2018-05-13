@@ -1,2 +1,91 @@
-# data-scanner
-(Sensitive) data scanner
+
+# KnowYourData - (Sensitive) Data Scanner 
+
+## Purpose
+
+The sensitive data scanner allows you to scan your database schema for sensitive data.
+
+It will scan the schema = column names and match for names that indicate personal data.
+You can extend this list on your own, it is built on regular expressions.
+So in fact you can search your schema for any regular expression you like and rate it.
+It is not limited to personal data.
+
+It will output the results bascially in the format MS Excel.
+Additionally, JSON files are provided for visualizing the tables/columns matched as personal data.
+
+This software assists in creating and especially maintaining the records data processing activities by reading the
+person-related data from where it is stored (the database). 
+ 
+For more advanced scenarios please see Commercial Version below.
+
+
+## Installation Requirements
+* Java JRE 1.7
+
+## Usage
+You configure the application using config/config.properties.
+
+## How it works
+You can provide 
+* JDBC url and login data or
+* DDL-SQL-script (CREATE TABLE statements)
+
+The program will scan the JDBC url (or DDL-SQL-script) provided and search for all column names in classification.properties.
+Then it will determine the sensitivity using datacategory_sensitivity.properties.
+
+## Results
+The program will generate the following files:
+
+* Excel file
+   * Overview of all tables and the sensitive data they may hold
+   * Detail overview for each table listing all sensitive columns
+   * Data dictionary of all tables with all columns 
+
+* JSON file with overview by application
+
+* JSON file with overview by datacategory
+
+
+## Screenshots
+
+The following screenshots are based on the Northwind database ported to mysql (available for download here https://github.com/dalers/mywind).
+
+This is the first overview of tables holding sensitive data (including table remarks):
+
+![Overview of tables and data categories](data-scanner-core/xdocs/sample_northwind/screen_excel_overview.png)
+
+This is the listing of the columns and their classification (including column remarks):
+
+![Table columns and data categories](data-scanner-core/xdocs/sample_northwind/screen_excel_detail.png)
+
+You also get a complete data dictionary listing all tables/columns and their data sensitivity.
+
+![Data dictionary](data-scanner-core/xdocs/sample_northwind/screen_excel_data_dictionary.png)
+
+And this is how you can visualize the tables/columns holding sensitive data to get a big picture:
+
+![Sunburst diagram](data-scanner-core/xdocs/sample_northwind/sunburst.png)
+
+
+
+
+
+## Commercial version
+
+Here is a short list of the features that support you exploring your data even more in the commercial version.
+
+* Scan multiple datasources at once
+* Data based database scanning
+* Checking for Foreign Keys to visualize further usage of personal data
+
+For more information please visit:
+
+[KnowYourData Enterprise](http://www.fwd.at/) (by FWD GmbH).
+
+## License
+
+Copyright 2018 FWD GmbH
+
+Licensed under the Apache License, Version 2.0; you may not use this file except in compliance with the License. You may obtain a copy of the License at apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
