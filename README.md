@@ -70,6 +70,10 @@ The program will generate the following files:
 
 The following screenshots are based on the Northwind database ported to mysql (available for download here https://github.com/dalers/mywind).
 
+This is how you can visualize the tables/columns holding sensitive data to get a big picture:
+
+![Sunburst diagram](data-scanner-core/xdocs/sample_northwind/sunburst.png)
+
 This is the first overview of tables holding sensitive data (including table remarks):
 
 ![Overview of tables and data categories](data-scanner-core/xdocs/sample_northwind/screen_excel_overview.png)
@@ -82,9 +86,6 @@ You also get a complete data dictionary listing all tables/columns and their dat
 
 ![Data dictionary](data-scanner-core/xdocs/sample_northwind/screen_excel_data_dictionary.png)
 
-And this is how you can visualize the tables/columns holding sensitive data to get a big picture:
-
-![Sunburst diagram](data-scanner-core/xdocs/sample_northwind/sunburst.png)
 
 
 ## Feedback and Support
