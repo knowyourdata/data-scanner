@@ -18,7 +18,6 @@ person-related data from the database schema.
  
 For more advanced scenarios (like reading from the database records) please see Commercial Version below.
 
-
 ## Installation Requirements
 * Java JRE 1.7
 
