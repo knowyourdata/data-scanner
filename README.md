@@ -25,6 +25,8 @@ Note that you can move the mouse over the arcs in the dynamic version!
 
 ## Screenshots file scanner
 This is how matches in the file system are visualized:
+Colors are based on the sensitivity of the matches in the folders/files.
+The sensitivity categories can be fully customized.
 
 ![Sunburst diagram](file-scanner-core/xdocs/sample_testdata/sunburst.png)
 
