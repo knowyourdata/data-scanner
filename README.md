@@ -13,7 +13,7 @@ Please see
 * ![data-scanner-core](data-scanner-core/readme.md) for more information on the database scanner
 * ![file-scanner-core](data-scanner-core/readme.md) for more information on the file scanner 
 
-## Screenshots data scanner
+## Screenshots database scanner
 
 The following screenshots are based on the Northwind database ported to mysql (available for download here https://github.com/dalers/mywind).
 

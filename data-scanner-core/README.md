@@ -65,7 +65,7 @@ The program will generate the following files:
 
 => Using the file index.html you can view the d3js / SVG diagram based on Json file overview by application.
 
-[Download Excel](data-scanner-core/xdocs/sample_northwind/result/result.xlsx)
+[Download Excel](xdocs/sample_northwind/result/result.xlsx)
 
 ## Screenshots
 
@@ -73,21 +73,21 @@ The following screenshots are based on the Northwind database ported to mysql (a
 
 This is how you can visualize the tables/columns holding sensitive data to get a big picture
 
-![Sunburst diagram](data-scanner-core/xdocs/sample_northwind/sunburst.png)
+![Sunburst diagram](xdocs/sample_northwind/sunburst.png)
 
 Note that you can move the mouse over the arcs in the dynamic version!
 
 This is the first overview of tables holding sensitive data (including table remarks):
 
-![Overview of tables and data categories](data-scanner-core/xdocs/sample_northwind/screen_excel_overview.png)
+![Overview of tables and data categories](xdocs/sample_northwind/screen_excel_overview.png)
 
 This is the listing of the columns and their classification (including column remarks):
 
-![Table columns and data categories](data-scanner-core/xdocs/sample_northwind/screen_excel_detail.png)
+![Table columns and data categories](xdocs/sample_northwind/screen_excel_detail.png)
 
 You also get a complete data dictionary listing all tables/columns and their data sensitivity.
 
-![Data dictionary](data-scanner-core/xdocs/sample_northwind/screen_excel_data_dictionary.png)
+![Data dictionary](xdocs/sample_northwind/screen_excel_data_dictionary.png)
 
 
 
