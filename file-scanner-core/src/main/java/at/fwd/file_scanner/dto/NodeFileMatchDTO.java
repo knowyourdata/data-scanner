@@ -54,7 +54,7 @@ public class NodeFileMatchDTO {
 			}
 		}
 		
-		log.info("dto.sensitivityLevel: " + dto.getSensitivityLevel());
+		log.debug("dto.sensitivityLevel: " + dto.getSensitivityLevel());
 		
 		
 		if (restOfKey!=null) {
