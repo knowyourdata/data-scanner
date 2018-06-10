@@ -35,9 +35,9 @@ public class NodeFileMatchDTO {
 			
 		}
 		
-		log.info("processing key: " + key);
-		log.info("level: " + level);
-		log.info("sensitivityLevel: " + sensitivityLevel);
+		log.debug("processing key: " + key);
+		log.debug("level: " + level);
+		log.debug("sensitivityLevel: " + sensitivityLevel);
 		
 		NodeFileMatchDTO dto = map.get(key);
 		if (dto==null) {
