@@ -296,6 +296,10 @@ public class JsonOutputService {
 			columnObj.addProperty("name",  columnname);
 			columnObj.addProperty("size", 1);
 			columnObj.addProperty("subnode", true);
+			
+			// add data matches
+			addDataMatches(mappedColumn, columnObj);
+			
 			columnlist.add(columnObj);
 			
 		}
@@ -342,7 +346,11 @@ public class JsonOutputService {
 	}
 
 	protected void addForeignKeyReferences(Integer datacategorySensitivityLevel, JsonArray columnlist, MappedTableDTO mappedTableDTO) {
-		log.debug("no foreign key tracking supported");
+		log.debug("no tracking of foreign keys supported");
+	}
+	
+	protected void addDataMatches(MappedColumn mappedTableDTO, JsonObject jsonObject) {
+		log.debug("no tracking of data matches supported");
 	}
 
 }

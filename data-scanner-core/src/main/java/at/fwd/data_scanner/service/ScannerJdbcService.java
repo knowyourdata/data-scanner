@@ -47,22 +47,25 @@ public class ScannerJdbcService {
 		resultSet.close();
 		
 		// TABLE_TYPE "VIEW"
-		resultSet = databaseMetaData.getTables(null, null, null, new String[] { "VIEW" });
-		while (resultSet.next()) {
-			String tablename = resultSet.getString("TABLE_NAME");
-			
-			
-			
-			if (!excludeTables.contains(tablename)) {
-				TableDTO tableDTO = readColumns(databaseMetaData, tablename, checkForeignkeys);
+		boolean processViews = false;
+		if (processViews) {
+			resultSet = databaseMetaData.getTables(null, null, null, new String[] { "VIEW" });
+			while (resultSet.next()) {
+				String tablename = resultSet.getString("TABLE_NAME");
 				
-				String remarks = resultSet.getString("REMARKS");
-				tableDTO.setRemarks(remarks);
 				
-				tableList.add(tableDTO);	
+				
+				if (!excludeTables.contains(tablename)) {
+					TableDTO tableDTO = readColumns(databaseMetaData, tablename, checkForeignkeys);
+					
+					String remarks = resultSet.getString("REMARKS");
+					tableDTO.setRemarks(remarks);
+					
+					tableList.add(tableDTO);	
+				}
 			}
+			resultSet.close();
 		}
-		resultSet.close();
 		
 		conn.close();
 		

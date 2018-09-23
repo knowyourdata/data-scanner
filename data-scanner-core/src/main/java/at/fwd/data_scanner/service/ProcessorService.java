@@ -34,8 +34,12 @@ public class ProcessorService {
 				log.debug("   columnname: " + columnDTO.getColumnname());
 				MappedColumn mappedColumn = processColumn(application, tableDTO.getTablename(), classificationMap, tableDTO, columnDTO);	
 				
+				
+				mappedColumn = postProcessMappedColumn(application, tableDTO.getTablename(), datacategorySensitivityMap, tableDTO, columnDTO, mappedColumn);
+				
 				if (mappedColumn!=null) {
 					log.debug("** adding mappedColumn: " + tableDTO.getTablename() + ":" + mappedColumn.getColumnDTO().getColumnname());
+					
 					Integer sensitivityLevel = datacategorySensitivityMap.get(mappedColumn.getClassification());
 					if (sensitivityLevel!=null && sensitivityLevel > maxSensitivityLevel) {
 						maxSensitivityLevel = sensitivityLevel;
@@ -56,6 +60,14 @@ public class ProcessorService {
 		return mappedTableDTOList;
 	}
 
+	protected MappedColumn postProcessMappedColumn(String application, String tablename, Map<String, Integer> datacategorySensitivityMap, 
+			TableDTO tableDTO,
+			ColumnDTO columnDTO, MappedColumn mappedColumn) {
+		log.info("no post-processing of MappedColumn");
+		return mappedColumn;
+	}
+	
+	
 	private MappedColumn processColumn(String application, String tablename, Map<String, String> classificationMap, 
 			TableDTO tableDTO,
 			ColumnDTO columnDTO) {
