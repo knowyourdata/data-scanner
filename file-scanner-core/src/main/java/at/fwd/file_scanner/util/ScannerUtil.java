@@ -35,7 +35,7 @@ public class ScannerUtil {
 					
 					int matchSensitivityLevel = dataCategorySensitivityMap.get(key);
 					
-					log.info(filename + ": possible match for " + key + ": " + matchingValue);
+					log.debug(filename + ": possible match for " + key + ": " + matchingValue);
 					pw.println(fileAbsolutePath + ";" + key + ";" + matchingValue + ";" + matchSensitivityLevel);
 					
 					
