@@ -28,7 +28,7 @@ This is how matches in the file system are visualized:
 Colors are based on the sensitivity of the matches in the folders/files.
 The sensitivity categories can be fully customized.
 
-![Sunburst diagram](file-scanner-core/xdocs/sample_testdata/sunburst.png)
+![Sunburst diagram](file-scanner-core/xdocs/sample_testdata/sunburst_with_text.png)
 
 ## Feedback and Support
 If you need support or have questions please contact us at office@fwd.at
