@@ -25,10 +25,16 @@ Note that you can move the mouse over the arcs in the dynamic version!
 
 ## Screenshots file scanner
 This is how matches in the file system are visualized:
+
+### Sunburst diagram
 Colors are based on the sensitivity of the matches in the folders/files.
 The sensitivity categories can be fully customized.
 
 ![Sunburst diagram](file-scanner-core/xdocs/sample_testdata/sunburst_with_text.png)
+
+### Tree diagram
+A simple tree diagram is provided and a additionally a zoomable tree.
+![Tree diagram](file-scanner-core/xdocs/sample_testdata/tree_simple.png)
 
 ## Feedback and Support
 If you need support or have questions please contact us at office@fwd.at
