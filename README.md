@@ -10,8 +10,8 @@ The sensitive data scanners allow you to scan databases and your local file syst
 
 ## Usage
 Please see 
-* ![data-scanner-core](data-scanner-core/readme.md) for more information on the database scanner
-* ![file-scanner-core](data-scanner-core/readme.md) for more information on the file scanner 
+* ![data-scanner-core](data-scanner-core/README.md) for more information on the database scanner
+* ![file-scanner-core](file-scanner-core/README.md) for more information on the file scanner 
 
 ## Screenshots database scanner
 
